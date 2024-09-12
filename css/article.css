@@ -1,0 +1,28 @@
+.wrapper__content-item {
+  height: 250px;
+  background-size: cover;
+}
+
+.wrapper__content-item:nth-child(1) {
+  background-image: url(/img/article/dota2.jpg);
+}
+
+.wrapper__content-item:nth-child(2) {
+  background-image: url(/img/article/arkan.jpg);
+}
+
+.wrapper__content-item:nth-child(3) {
+  background-image: url(/img/article/sposobnosti.jpg);
+}
+
+.wrapper__content-item:nth-child(4) {
+  background-image: url(/img/article/system.jpg);
+}
+
+.header__menu li:first-child {
+  color: var(--grey);
+}
+
+.header__menu li:nth-child(2) {
+  color: var(--black);
+}

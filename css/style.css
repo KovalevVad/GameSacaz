@@ -1,0 +1,241 @@
+:root {
+  --font-family: "Ubuntu", sans-serif;
+  --grey: #999;
+  --black: #000;
+  --white: #fff;
+  font-family: var(--font-family);
+}
+
+body {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  padding-left: 132px;
+  padding-right: 132px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px 0 rgba(218, 218, 218, 0.25);
+}
+
+.header__menu {
+  margin-left: 348px;
+  margin-right: 207px;
+}
+
+.header__menu > ul {
+  display: flex;
+  gap: 24px;
+}
+
+.header__favorite {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 32px;
+  height: 24px;
+}
+
+.header__menu li,
+.header__favorite {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+
+.header__menu li:first-child {
+  color: var(--black);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 776px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.wrapper__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  height: 246px;
+  border-radius: 20px;
+  background-image: url(/img/main/searchBack.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 32px;
+}
+
+.wrapper__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 20px;
+}
+
+.wrapper__content-item {
+  position: relative;
+  box-shadow: 0 3px 20px 0 rgba(175, 175, 175, 0.25);
+  background: var(--white);
+  height: 251px;
+  border-radius: 20px;
+  background-image: url(/img/main/фото.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.wrapper__content-item:nth-child(2) {
+  background-image: url(/img/main/фото-3.png);
+}
+
+.wrapper__content-item:nth-child(3) {
+  background-image: url(/img/main/фото-2.jpg);
+}
+
+.wrapper__content-item:nth-child(4) {
+  background-image: url(/img/main/фото-4.png);
+}
+
+h1 {
+  width: 576px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  color: var(--white);
+}
+
+h2 {
+  position: absolute;
+  font-weight: 500;
+  color: var(--white);
+  bottom: 16px;
+  padding: 3px;
+  border-radius: 2px;
+  background: rgba(39, 156, 182, 0.9);
+}
+
+.wrapper__content-item > img {
+  position: absolute;
+  cursor: pointer;
+  right: 12px;
+  top: 12px;
+}
+
+.wrapper__content-cost {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  border-radius: 10px;
+  padding: 8px;
+  width: auto;
+  height: 36px;
+  background: rgba(39, 156, 182, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.wrapper__content-cost > span {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.wrapper__search-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 28px;
+  padding: 6px 6px 6px 8px;
+  width: 576px;
+  height: 54px;
+  background: var(--white);
+}
+
+.wrapper__search-block > button {
+  position: absolute;
+  border-radius: 20px;
+  padding: 12px 16px;
+  width: 79px;
+  height: 42px;
+  background: #279cb6;
+  right: 6px;
+  color: var(--white);
+}
+
+.wrapper__search-block > input {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+  margin-left: 11px;
+  width: 300px;
+}
+
+.wrapper__content-item > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+.wrapper > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 12px 10px;
+  width: 176px;
+  height: 42px;
+  background: #279cb6;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white);
+
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--black);
+  margin-top: 24px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black);
+  margin-top: 16px;
+}
+
+.backgroundBottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  z-index: -1;
+}

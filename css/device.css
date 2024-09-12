@@ -1,0 +1,26 @@
+.wrapper__content-item:nth-child(1) {
+  background-image: url(/img/device/1.jpg);
+}
+
+.wrapper__content-item:nth-child(2) {
+  background-image: url(/img/device/3.png);
+}
+
+.wrapper__content-item:nth-child(3) {
+  background-image: url(/img/device/2.png);
+}
+
+.wrapper__content-item:nth-child(4) {
+  background-image: url(/img/device/4.png);
+}
+
+
+.header__menu li:first-child {
+  color: var(--grey);
+}
+
+.header__menu li:nth-child(4) {
+  color: var(--black);
+}
+
+
